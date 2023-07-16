@@ -68,7 +68,7 @@ class JobController extends Controller
     }
     public function getAllByTitle()
     {
-        $posts = Post::where('deadline', '>', Carbon::now())->get()->pluck('id', 'job_title');
+        $posts = Post::where('deadline', '>', Carbon::now())->get()->pluck('id', 'locategory_jp');
         return $posts->toJson();
     }
 }

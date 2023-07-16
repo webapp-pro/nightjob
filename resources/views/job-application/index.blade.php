@@ -28,7 +28,7 @@
                     <td>1</td>
                     <td>{{$application->user->name}}</td>
                     <td><a href="mailto:{{$application->user->email}}">{{$application->user->email}}</a></td>
-                    <td><a href="{{route('post.show',['job'=>$application->post->id])}}">{{substr($application->post->job_title,0,14)}}...</a></td>
+                    <td><a href="{{route('post.show',['job'=>$application->post->id])}}">{{substr($application->post->locategory_jp,0,14)}}...</a></td>
                     <td>{{$application->created_at}}</td>
                     <td><a href="{{route('jobApplication.show',['id'=>$application])}}" class="btn primary-outline-btn">見る</a>
                       <form action="{{route('jobApplication.destroy')}}" method="POST" class="d-inline-block">

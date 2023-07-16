@@ -18,20 +18,20 @@
               </div>
               <div class="col-xs-12 col-md-9">
                 <div class="p-sm-3 p-md-0">
-                  <a href="{{route('post.show',['job'=>$post])}}" class="secondary-link pb-2 d-block"><h5 class="font-weight-bold">{{$post->job_title}}</h5></a>
+                  <a href="{{route('post.show',['job'=>$post])}}" class="secondary-link pb-2 d-block"><h5 class="font-weight-bold">{{$post->locategory_jp}}</h5></a>
                   <p class="h6">{{$company->title}}</p>
                   <p class="small"><i class="fas fa-map-marker-alt"></i> {{$post->job_location}}</p>
                   <p class="small"><i class="fas fa-lightbulb"></i> {{$post->skills}}</p>
                   <div class="d-flex justify-content-between py-3">
                     <div class="text-danger">
-                      <i class="fas fa-clock"></i> <span class="">Apply Before: 
+                      <i class="fas fa-clock"></i> <span class="">応募する前に: 
                         @php    
                         $date = new DateTime($post->deadline);  
                         echo date('d', $date->getTimestamp() - time());
                         @endphp day[s] from now</span>
                     </div>
                     <div class="text-info">
-                      <i class="fas fa-eye"></i> <span>Views: {{$post->views}}</span>
+                      <i class="fas fa-eye"></i> <span>閲覧回数: {{$post->views}}</span>
                     </div>
                   </div>
                 </div>

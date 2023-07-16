@@ -22,13 +22,14 @@ class CompanyFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => 2, //default author by user seeder class
-            'occupation_category_id' => 1,
-            'logo' => 'images/companies/logos/',
-            'title' => 'Web App developer',
-            'description' => 'This company Pvt Ltd is the company specialized to help organizations with financial technology solutions. We provide solutions such comprehensive mobile and online payment solutions and gateway facilitating services. We facilitate in online transaction settlement service to merchants and their banks to be able to accept/acquire payments from third party payment sources. We provide technology and solutions for acquiring payment from 3rd party wallets, smart wallets solutions, merchant management solutions and host of other solutions..',
-            'website' => 'https://www.companywebsite.com',
-            'cover_img' => 'nocover',
+            'user_id' => 1, //default author by user seeder class
+            'location_category_id' => 1,
+            'logo' => '',
+            'title' => 'Club FELIX(フェリクス)',
+            'cover_img' => 'storage/companies/cover/IMG_87991688386598.jpeg',
+            'description' => '〈学歴，職歴，スキル#すべて不問〉
+            熱い想いさえあればどなたでも大丈夫です
+            【体験入社も受付中！】',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s"),
         ];

@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
 
         $factoryUsers = [
             [
-                'nikename' => '管理者',
+                // 'nikename' => '管理者',
                 'name' => '管理者',
                 'email' => 'admin@admin.com',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
             ],
 
             [
-                'nikename' => '雇用主1',
+                // 'nikename' => '雇用主1',
                 'name' => '雇用主1',
                 'email' => 'employer@employer.com',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
             ],
 
             [
-                'nikename' => '応募者1',
+                // 'nikename' => '応募者1',
                 'name' => '応募者1',
                 'email' => 'app@app.com',
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

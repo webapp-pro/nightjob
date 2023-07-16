@@ -20,8 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             // $table->tinyint('gender');
-            $table->date('birthday')->default('0000-00-00');
-            $table->string('telephone');
+            $table->date('birthday')->default('1990-01-01');
+            $table->string('telephone')->default('');
             // $table->string('street');
             // $table->string('province');
             // $table->string('current_job');

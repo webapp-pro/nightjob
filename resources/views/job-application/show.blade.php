@@ -41,7 +41,7 @@
               </div>
               <div class="col-9">
                 <p class="h4 text-info text-capitalize">
-                  {{$post->job_title}}
+                  {{$post->locategory_jp}}
                 </p>
                 <h6 class="text-uppercase">
                   <a href="{{route('account.employer',['employer'=>$company])}}">{{$company->title}}</a>

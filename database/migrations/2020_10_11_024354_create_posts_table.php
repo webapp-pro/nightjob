@@ -23,8 +23,8 @@ class CreatePostsTable extends Migration
             $table->string('salary', 30);
             $table->string('locategory', 30);
             $table->timestamp('deadline');
-            $table->string('experience');
-            $table->string('skills');
+            $table->string('experience')->default('');
+            $table->string('skills')->default('');
             $table->text('description');
             $table->unsignedMediumInteger('views')->default(1);
             $table->timestamps();

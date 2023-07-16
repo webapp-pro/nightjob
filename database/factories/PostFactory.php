@@ -22,17 +22,18 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'job_title' => 'Marketing manager',
-            'job_level' => 'Senior level',
-            'vacancy_count' => rand(2, 10), // password
-            'employment_type' => 'Full time',
-            'job_location' => 'kathmandu-18,Nepal',
+            'company_id' => '',
+            'occategory' => '',
+            'bucategory' => '', // password
+            'vacancy_count' => 0,
+            'spcategory' => '',
+            'salary' => '',
+            'locategory' => '',
             'deadline' => date("Y-m-d H:i:s", strtotime(date("Y-m-d H:i:s") . " +2 days")),
-            'education_level' => 'Bachelors',
-            'experience' => '2 years',
-            'salary' => '20k - 50k',
-            'skills' => 'Team player, Active listener',
-            'specifications' => '<p></p>',
+           
+            'experience' => '',
+            'description' => '',
+            'views' => 0,
         ];
     }
 }
