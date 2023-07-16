@@ -32,8 +32,7 @@ class CompanySeeder extends Seeder
         ]);
         foreach ($details as $index => $detail) {
             $post = Post::factory()->create([
-                'company_id' => $company->id,
-                'job_title' => $detail['title'],
+                'company_id' => $company->id
             ]);
         }
     }

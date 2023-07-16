@@ -158,7 +158,7 @@
                   </div>
                   <div class="job-desc col-8">
                     <a href="{{route('post.show',['job'=>$post])}}" class="job-category text-muted font-weight-bold">
-                      <p class="text-muted h6">{{$job->job_title}}</p>
+                      <p class="text-muted h6">{{$job->locategory_jp}}</p>
                       <p class="small">{{$job->company->title}}</p>
                       <p class="font-weight-normal small text-danger">締切: {{date('d',$job->remainingDays())}} 日</p>
                     </a>

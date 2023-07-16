@@ -36,10 +36,10 @@
               >
                 <h5 class="secondary-link font-weight-bold">
                   <a
-                    :href="`/job/${post.id}-${post.job_title}`"
+                    :href="`/job/${post.id}-${post.locategory_jp}`"
                     target="_blank"
                   >
-                    {{ post.job_title }}
+                    {{ post.locategory_jp }}
                   </a>
                 </h5>
                 <h6 class="mt-2">

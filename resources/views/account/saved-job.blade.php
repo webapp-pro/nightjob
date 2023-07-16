@@ -23,7 +23,7 @@
               @foreach ($posts as $post)
                 @if($posts->count() >0)
                 <tr>
-                  <td><a href="{{route('post.show',['job'=>$post])}}">{{$post->job_title}}</a></td>
+                  <td><a href="{{route('post.show',['job'=>$post])}}">{{$post->locategory_jp}}</a></td>
                   <td><a href="#">{{$post->job_level}}</a></td>
                   <td><a href="{{route('account.employer',['employer'=>$post->company])}}">{{substr($post->company->title,0,14)}}..</a></td>
                   <td>{{$post->vacancy_count}}</td>
