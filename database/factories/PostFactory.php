@@ -19,6 +19,7 @@ class PostFactory extends Factory
      *
      * @return array
      */
+    
     public function definition()
     {
         return [
